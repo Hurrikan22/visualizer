@@ -381,10 +381,10 @@
 
     <div class="stage-wrapper">
       <div class="stage-area">
-        <img src="PXS.png" alt="PXS">
-        <img src="PS%20%282%29.png" alt="PS (2)">
-        <img src="PM.png" alt="PM">
-        <img src="PL%282%29.png" alt="PL(2)">
+        <img id="img-XS" class="stage-image" src="PXS.png" alt="PXS">
+        <img id="img-S"  class="stage-image" src="PS (2).png" alt="PS (2)">
+        <img id="img-M"  class="stage-image visible" src="PM.png" alt="PM">
+        <img id="img-L"  class="stage-image" src="PL(2).png" alt="PL(2)">
       </div>
 
       <div class="controls">
@@ -394,11 +394,11 @@
         <button onclick="setStage('L')" data-set="L">L</button>
 
         <!-- Info-Bild als klickbares Bild -->
-        <div class="info-btn-wrapper" onmouseenter="showTooltip()" onmouseleave="hideTooltip()">
-          <img src="https://raw.githubusercontent.com/Hurrikan22/visualizer/main/image.psd%281%29.png" alt="image.psd(1)">
+<div class="info-btn-wrapper" onmouseenter="showTooltip()" onmouseleave="hideTooltip()">
+                    <img src="image.psd(1).png" alt="Info" class="info-btn" onclick="openPDF()">
           <div class="info-tooltip" id="tooltip">
             Für den vollen Umfang an Informationen schauen sie sich den kompletten 
-            <a href="images/Mietkatalog ConTec Eventtechnik.pdf" target="_blank" rel="noopener noreferrer">Mietkatalog</a> an.
+                        <a href="Mietkatalog ConTec Eventtechnik.pdf" target="_blank" rel="noopener noreferrer">Mietkatalog</a> an.
           </div>
         </div>
       </div>
@@ -457,5 +457,6 @@
 </body>
 
 </html>
+
 
 
